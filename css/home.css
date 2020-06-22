@@ -10,7 +10,7 @@ body {
     font-weight: 600;
     color: #232323;
 }
-.main .btn {
+.main .i-btn {
     background: #BD2F2F;
     border-radius: 5px;
     color: #FFFFFF;
@@ -334,7 +334,7 @@ body {
         line-height: 22px;
     }
 
-    .main .btn {
+    .main .i-btn {
         font-size: 18px;
         line-height: 23px;
     }
