@@ -25,7 +25,7 @@ h2 {
     line-height: 47px; 
 }
 h2, a {
-    color: #232323;
+    color: #232323 !important;
 }
 h2, a:hover {
     color: #232323;
@@ -37,11 +37,11 @@ h5{
     font-size: 24px;
     line-height: 29px;
 }
-p, a {
-    color: #fff;
+p a {
+    color: #fff !important;
 }
-p, a:hover {
-    color: #fff;
+p a:hover {
+    color: #fff !important;
 }
 p {
     font-weight: normal;
