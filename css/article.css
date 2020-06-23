@@ -81,20 +81,42 @@ a span {
     color: var(--theme-dark);
 }
 
-/* Header Section Styles */
-
-.navbar-nav li a {
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--theme-dark) !important;
+/* ==================
+    NAVBAR SECTION
+======================*/
+.navbar .zira-nav-toggler:focus {
+    outline: none;
 }
 
-.navbar-nav li:hover {
-    border-bottom: 3px solid var(--theme-red);
+.zira-nav-links .nav-item {
+   color: #232323; 
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   transition: color ease-in 200ms;
 }
 
-.active-link {
-    border-bottom: 3px solid var(--theme-red);
+.zira-nav-links .nav-item:hover {
+    color: #BD2F2F;
+}
+
+.zira-nav-links .nav-item.active {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+} 
+
+.zira-nav-links .nav-item.active::after {
+    content: " ";
+    height: 6px;
+    width: 100%;
+    background-color: #BD2F2F;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+
+.account-icon {
+    width: 35px;
 }
 
 .round-circle {
@@ -106,7 +128,7 @@ a span {
 
 /* Main Body */
 .main {
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 .btn-primary {
@@ -140,6 +162,36 @@ a span {
 }
 .img-fluid:hover {
     width: 100%;
+}
+
+/* ==========================
+    FOOTER SECTION
+=============================*/
+
+.footer {
+    background: #3C3D48;
+}
+
+.footer .nav {
+    margin: 5% auto 8%; 
+}
+
+.footer .nav-item .nav-link {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF !important;
+}
+
+.footer .nav-link:hover {
+    color: #c5c3c3;
+}
+
+.footer .copy-right {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #dbd6d6;   
 }
 
 @media only screen and (max-width: 687px) {
