@@ -10,7 +10,7 @@ body {
     font-weight: 600;
     color: #232323;
 }
-.main .btn {
+.main .i-btn {
     background: #BD2F2F;
     border-radius: 5px;
     color: #FFFFFF;
@@ -18,6 +18,17 @@ body {
     font-size: 24px;
     line-height: 29px;
 }
+
+.main .btn:hover {
+    background: #FFFFFF;
+    color: #BD2F2F;
+    border: 1px solid #BD2F2F;
+}
+
+.main .btn:focus {
+    box-shadow: none;
+}
+
 
 .main .banner-btn {
     padding: 2% 13%;
@@ -32,6 +43,10 @@ body {
     padding: 1.2% 8%;
 }
 
+.blog-section img:hover {
+    opacity: 0.8;
+}
+
 /* ==================
     NAVBAR SECTION
 ======================*/
@@ -44,6 +59,11 @@ body {
    font-weight: 700;
    font-size: 16px;
    line-height: 19px;
+   transition: color ease-in 200ms;
+}
+
+.zira-nav-links .nav-item:hover {
+    color: #BD2F2F;
 }
 
 .zira-nav-links .nav-item.active {
@@ -59,6 +79,10 @@ body {
     background-color: #BD2F2F;
     border-radius: 5px;
     margin-top: 6px;
+}
+
+.account-icon {
+    width: 35px;
 }
 
 /* =========================
@@ -157,7 +181,8 @@ body {
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
-    color: #BD2F2F; 
+    color: #BD2F2F;
+    text-decoration: none; 
 }
 
 .post-info .cta-link::after {
@@ -229,11 +254,15 @@ body {
     color: #FFFFFF;
 }
 
+.footer .nav-link:hover {
+    color: #c5c3c3;
+}
+
 .footer .copy-right {
     font-weight: 300;
     font-size: 18px;
     line-height: 23px;
-    color: #FFFFFF;   
+    color: #dbd6d6;   
 }
 
 /* ==========================
@@ -306,7 +335,7 @@ body {
         line-height: 22px;
     }
 
-    .main .btn {
+    .main .i-btn {
         font-size: 18px;
         line-height: 23px;
     }
