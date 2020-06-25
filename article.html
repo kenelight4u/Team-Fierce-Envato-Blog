@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    
+    <!--Animinate  -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" /> -->
+    <link rel="stylesheet" href="css/animate.css">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/article.css" >
+    
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -37,17 +41,17 @@
     </div>
 
     <!-- Main Body -->
-    <div class="container main">
+    <div class="container">
         <div class="row">
             <div class="row px-3">
-                <h1 class="text-center"> SMS vs Email, How to Leverage Social Media (the Right Way), and the Content Tipping Point</h1>
+                <h1 class="text-center wow fadeInDown "> SMS vs Email, How to Leverage Social Media (the Right Way), and the Content Tipping Point</h1>
             </div>
         </div>
     </div>   
-    <div class="container">
+    <div class="container ">
         <div class="row d-flex justify-content-center px-3 mt-3 ">
                 
-            <img src="images/article/passport.jpg" class="round-circle mr-5" alt="">
+            <img src="images/article/passport.jpg" class="round-circle mr-5 " alt="">
             
             <p class="mr-5">
                  <i>written by</i>  <br />
@@ -96,7 +100,7 @@
     
 
     <!-- Link to Social Medias -->
-    <div class="container">
+    <div class="container wow pulse" data-wow-iteration="infinite" data-wow-duration="1500ms">
         <div class="row d-flex justify-content-center pt-5">
             <a href="#" class="mr-3"><img src="./images/article/Group 387.png" alt=""></a>
             <a href="#" class="mr-3"><img src="./images/article/Vector (2).png" alt=""></a>
@@ -145,28 +149,28 @@
     <!-- Related Article -->
     <div class="container ">
         <div class="row pl-3 pt-5">
-            <h2 class="active-link">
+            <h2 class="active">
                 <a href="#">
                     Related Articles
                 </a> 
             </h2>
         </div>
         <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="col-lg-4 col-md-4 col-sm-4 wow slideInLeft">
                 <img src="images/article/cjYQBSKDSII (4).png" class="img-fluid" alt="...">
                 
                 <h5 class="mt-2">What Is Fifa Doing?</h5>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="float-right"> <span>Read more</span></a>     
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInDown ">
                 <img src="images/article/cjYQBSKDSII (5).png" class="img-fluid" alt="...">
                 
                 <h5 class="mt-2">What Is Fifa Doing?</h5>
                 <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 <a href="#" class="float-right"> <span>Read more</span></a>     
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 ">
+            <div class="col-lg-4 col-md-4 col-sm-4 wow slideInRight">
                 <img src="images/article/cjYQBSKDSII.png" class="img-fluid" alt="...">
                 
                 <h5 class="mt-2">What Is Fifa Doing?</h5>
@@ -180,7 +184,7 @@
       <!-- Leave a Comment -->
     <div class="container ">
         <div class="row pl-3 pt-5">
-            <h2 class="active-link">
+            <h2 class="active">
                 Leave a comment
             </h2>
         </div>
@@ -231,7 +235,19 @@
     </footer>
 
 
-    
+  <!-- PlugIn -->
+    <script src="js/wow.min.js"></script>
+    <script> 
+        wow = new WOW({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true
+        });
+        
+        wow.init(); 
+    </script>  
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
