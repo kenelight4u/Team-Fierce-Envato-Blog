@@ -80,7 +80,9 @@ a span {
 .text-theme-dark {
     color: var(--theme-dark);
 }
-
+.active-link {
+    border-bottom: 3px solid var(--theme-red);
+}
 /* ==================
     NAVBAR SECTION
 ======================*/
